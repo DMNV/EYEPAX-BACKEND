@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyepaxCalculation.API", "EyepaxCalculation.API\EyepaxCalculation.API.csproj", "{D277777D-3982-4F7F-9F31-EEE0E8991927}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{07A80744-387E-4D40-B40F-9BE43AED25CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyepaxCalculation.API.Test", "EyepaxCalculation.API.Test\EyepaxCalculation.API.Test.csproj", "{20D3D582-221E-47DC-8126-A8247EDC0120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyepaxCalculation.Contracts", "EyepaxCalculation.Contracts\EyepaxCalculation.Contracts.csproj", "{2188848A-4331-4D0D-A5B1-A90113B27A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyepaxCalculation.Domain", "EyepaxCalculation.Domain\EyepaxCalculation.Domain.csproj", "{CA5D74D8-58E1-4492-8A4B-630C465BDE6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyepaxCalculation.Services", "EyepaxCalculation.Services\EyepaxCalculation.Services.csproj", "{806E15FD-2B3B-4C5B-AAC1-FE4E7778D6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyepaxCalculation.Services.Abstractions", "EyepaxCalculation.Services.Abstractions\EyepaxCalculation.Services.Abstractions.csproj", "{66577F29-C5EE-4820-A96E-762AC40A3C5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D277777D-3982-4F7F-9F31-EEE0E8991927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D277777D-3982-4F7F-9F31-EEE0E8991927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D277777D-3982-4F7F-9F31-EEE0E8991927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D277777D-3982-4F7F-9F31-EEE0E8991927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D3D582-221E-47DC-8126-A8247EDC0120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D3D582-221E-47DC-8126-A8247EDC0120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D3D582-221E-47DC-8126-A8247EDC0120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D3D582-221E-47DC-8126-A8247EDC0120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2188848A-4331-4D0D-A5B1-A90113B27A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2188848A-4331-4D0D-A5B1-A90113B27A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2188848A-4331-4D0D-A5B1-A90113B27A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2188848A-4331-4D0D-A5B1-A90113B27A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5D74D8-58E1-4492-8A4B-630C465BDE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5D74D8-58E1-4492-8A4B-630C465BDE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5D74D8-58E1-4492-8A4B-630C465BDE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5D74D8-58E1-4492-8A4B-630C465BDE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806E15FD-2B3B-4C5B-AAC1-FE4E7778D6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806E15FD-2B3B-4C5B-AAC1-FE4E7778D6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806E15FD-2B3B-4C5B-AAC1-FE4E7778D6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806E15FD-2B3B-4C5B-AAC1-FE4E7778D6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66577F29-C5EE-4820-A96E-762AC40A3C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66577F29-C5EE-4820-A96E-762AC40A3C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66577F29-C5EE-4820-A96E-762AC40A3C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66577F29-C5EE-4820-A96E-762AC40A3C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20D3D582-221E-47DC-8126-A8247EDC0120} = {07A80744-387E-4D40-B40F-9BE43AED25CD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D30F7B5-4C8E-48D2-AE5C-860C2A33559C}
+	EndGlobalSection
+EndGlobal
