@@ -29,6 +29,7 @@ namespace EyepaxCalculation.API
               c.SwaggerDoc("v1", new OpenApiInfo { Title = "Loan Calculation", Version = "v1" }));
 
             services.AddScoped<ICalculationTypeServices, CalculationTypeServices>();
+            services.AddScoped<ICalculateService, CalculateService>();
 
             services.AddTransient<ExceptionHandlingMiddleware>();
         }
