@@ -10,7 +10,7 @@ namespace EyepaxCalculation.API.Controllers
     public class CalculationController : ControllerBase
     {
         private readonly ICalculationTypeServices _calculationTypesServices;
-        private readonly ICalculateService _calculateService ;
+        private readonly ICalculateService _calculateService;
 
         public CalculationController(ICalculationTypeServices calculationTypes, ICalculateService calculateService)
         {
@@ -20,13 +20,13 @@ namespace EyepaxCalculation.API.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetCalculationTypes()
-        {   
+        {
             return Ok(await _calculationTypesServices.GetCalculationTypes());
         }
 
         [HttpPost]
         public async Task<IActionResult> Calculate(CalculateDto calculate)
-        { 
+        {
             return Ok(await _calculateService.Calculate(calculate));
         }
     }

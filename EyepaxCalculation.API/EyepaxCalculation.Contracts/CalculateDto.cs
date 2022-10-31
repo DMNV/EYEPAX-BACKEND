@@ -3,12 +3,16 @@
 namespace EyepaxCalculation.Contracts
 {
     public class CalculateDto
-    {
+    { 
+
+        [Required(ErrorMessage = "Calculation type is required")]
+        public string CalculationType { get; set; }
+
         [Required(ErrorMessage = "Loan amount is required")]
-        public double LoanAmount { get; set; }
+        public decimal LoanAmount { get; set; }
 
         [Required(ErrorMessage = "Rate is required")]
-        public double Rate { get; set; }
+        public decimal Rate { get; set; }
 
         [Required(ErrorMessage = "No of payments is required")]
         public int NoPayments  { get; set; }

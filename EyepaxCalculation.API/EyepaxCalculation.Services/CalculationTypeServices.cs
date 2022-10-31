@@ -11,12 +11,12 @@ namespace EyepaxCalculation.Services
         }
 
         public Task<List<CalculationTypeDto>> GetCalculationTypes()
-        { 
-            return Task.Run(() => new List<CalculationTypeDto>() { 
+        {
+            return Task.Run(() => new List<CalculationTypeDto>() {
                 new CalculationTypeDto
                 {
                     Id = 1,
-                    Name = "Equal Monthly Installment (EMI)"
+                    Name = CalculationType.EQUALMONTHLYINSTALLMENT
                 }
             });
         }

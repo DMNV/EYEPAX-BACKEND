@@ -4,6 +4,6 @@ namespace EyepaxCalculation.Services.Abstractions
 {
     public interface ICalculateService
     {
-        Task<double> Calculate(CalculateDto calculate);
+        Task<decimal> Calculate(CalculateDto calculate);
     }
 }

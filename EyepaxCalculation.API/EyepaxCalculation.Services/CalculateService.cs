@@ -5,14 +5,30 @@ namespace EyepaxCalculation.Services
 {
     public class CalculateService : ICalculateService
     {
-        public Task<double> Calculate(CalculateDto calculate)
+        public async Task<decimal> Calculate(CalculateDto calculate)
         {
+            if (calculate.CalculationType == CalculationType.EQUALMONTHLYINSTALLMENT)
+                return await EqualMonthlyInstallmentCalculate(calculate);
+            else
+                throw new ArgumentException("Please enter valid calculation type");
+        }
 
-            var a = (calculate.Rate + 1) * calculate.NoPayments;
+        private async Task<decimal> EqualMonthlyInstallmentCalculate(CalculateDto calculate)
+        {
+            try
+            {
+                var powValue = Math.Round((decimal)Math.Pow((double)(calculate.Rate + 1), calculate.NoPayments), 3);
+                var upValue = Math.Round(powValue * calculate.Rate, 6);
+                var downValue = powValue - 1;
+                var result = Math.Round(calculate.LoanAmount * (upValue / downValue), 2);
 
-             var result =calculate.LoanAmount * ((a * calculate.Rate) / calculate.Rate - 1);
+                return await Task.Run(() => result);
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
+            }
 
-             return Task.Run(() => result);
         }
     }
 }
