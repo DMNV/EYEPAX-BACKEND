@@ -16,7 +16,7 @@ namespace EyepaxCalculation.Services
                 new CalculationTypeDto
                 {
                     Id = 1,
-                    Name = CalculationType.EQUALMONTHLYINSTALLMENT
+                    Name = "Equal Monthly Installment (EMI)"
                 }
             });
         }

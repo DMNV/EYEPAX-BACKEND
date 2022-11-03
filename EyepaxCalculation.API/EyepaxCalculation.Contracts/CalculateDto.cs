@@ -6,7 +6,7 @@ namespace EyepaxCalculation.Contracts
     { 
 
         [Required(ErrorMessage = "Calculation type is required")]
-        public string CalculationType { get; set; }
+        public int CalculationType { get; set; }
 
         [Required(ErrorMessage = "Loan amount is required")]
         public decimal LoanAmount { get; set; }

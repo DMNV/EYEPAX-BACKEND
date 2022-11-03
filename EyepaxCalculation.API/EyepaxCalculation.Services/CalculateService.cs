@@ -7,7 +7,7 @@ namespace EyepaxCalculation.Services
     {
         public async Task<decimal> Calculate(CalculateDto calculate)
         {
-            if (calculate.CalculationType == CalculationType.EQUALMONTHLYINSTALLMENT)
+            if (calculate.CalculationType == (int)CalculationType.EQUALMONTHLYINSTALLMENT)
                 return await EqualMonthlyInstallmentCalculate(calculate);
             else
                 throw new ArgumentException("Please enter valid calculation type");

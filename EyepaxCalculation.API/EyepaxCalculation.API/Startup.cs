@@ -22,6 +22,7 @@ namespace EyepaxCalculation.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddControllers()
            .AddApplicationPart(typeof(AssemblyReference).Assembly);
 
@@ -53,6 +54,14 @@ namespace EyepaxCalculation.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            });
 
             app.UseEndpoints(endpoints =>
             {
